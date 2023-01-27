@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://imgs.search.brave.com/cQ9JxjqcaniERDkqb4sIXaOglEl4Q4uCnJZaW4QspQg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9nb29k/c3RvY2sucGhvdG9z/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE5/LzAzL1B1ZmZ5LUNs/b3Vkcy1pbi10aGUt/U2t5LTE5MjB4MTI4/MC5qcGc");
+    
+    background-size:cover;
+    background-position-y:bottom;
+    background-repeat: no-repeat;
+
+}
+    
+.container-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #4D7292;
+    min-height: 15vh;
+}
+
+.container-title h1{
+    font-size: 2.4em;
+    text-align: center;
+    color: white;
+    
+}
+
+.container-input{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+  
+    
+    
+}
+
+.container-input input{
+    width: 270px;
+    height: 30px;
+    border: 2px solid black;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+
+    
+}
+
+.container-input input::placeholder{
+    color: white;
+    font-size: 1em;
+}
+
+.container-icon{
+    margin-left: 5px;      
+
+}
+
+
+.container-icon button{
+    font-size: 1.6em;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.container-anwser{
+ 
+}
+
+.answer-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 500px;
+    min-height: 15vh;
+    background-color: #3C5971;
+    margin: 0px auto;
+    border-radius: 8px;
+    
+}
+
+.answer-items h1, h2{
+    color: white;
+    font-weight: bold;
+    max-width: 350px;
+    padding: 6px 10px;
+    margin-top: 2px;
+    font-size: 1.7em;
+}
+
+
+
+
+@media (max-width:500px){
+    .answer-items{
+      width: 90%;
+    }
+
+    .container-input input{
+        width: 200px;
+    }
+}
